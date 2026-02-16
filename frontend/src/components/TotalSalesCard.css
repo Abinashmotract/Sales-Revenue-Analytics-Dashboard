@@ -1,0 +1,54 @@
+.metric-neon {
+  background: rgba(8, 18, 34, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 150, 255, 0.3);
+  border-radius: 34px;
+  padding: 26px 22px;
+  box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 1), 0 0 0 1px rgba(0, 200, 255, 0.1) inset;
+  transition: 0.3s;
+  height: 100%;
+}
+
+.metric-neon:hover {
+  border-color: #00b7ff;
+  box-shadow: 0 25px 40px -15px rgba(0, 61, 128, 1), 0 0 0 1px #00a3ff inset;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a0c2e8;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.metric-label i {
+  color: #5aa9ff;
+}
+
+.metric-value {
+  font-size: 2.7rem;
+  font-weight: 700;
+  background: linear-gradient(145deg, #fff, #c8e2ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.trend-up {
+  background: rgba(0, 230, 150, 0.15);
+  border: 1px solid #00e6a0;
+  color: #a0ffd0;
+  padding: 6px 16px;
+  border-radius: 60px;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+}

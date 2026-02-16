@@ -1,0 +1,64 @@
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+}
+
+.filter-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-label {
+  font-size: 0.85rem;
+  color: #a0c2e8;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-label i {
+  color: #5aa9ff;
+  font-size: 0.9rem;
+}
+
+.filter-input,
+.filter-select {
+  background: rgba(14, 31, 50, 0.6);
+  border: 1px solid #2b5590;
+  border-radius: 40px;
+  padding: 10px 20px;
+  color: #d2e5ff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: 0.15s;
+  outline: none;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  border-color: #74c0ff;
+  background: rgba(23, 58, 94, 0.8);
+  box-shadow: 0 0 0 2px rgba(116, 192, 255, 0.2);
+}
+
+.filter-input:hover,
+.filter-select:hover {
+  border-color: #5aa9ff;
+}
+
+.filter-select {
+  cursor: pointer;
+}
+
+.filter-select option {
+  background: #0e1f32;
+  color: #d2e5ff;
+}

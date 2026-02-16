@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
-import {
-  Box,
-  Button,
-  Typography,
-  LinearProgress,
-  Alert,
-} from '@mui/material';
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import { Box, Typography, LinearProgress, Alert } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
 import { importSalesData } from '../store/slices/salesSlice';
+import './FileUpload.css';
 
 const FileUpload = () => {
   const dispatch = useDispatch();
@@ -67,50 +61,59 @@ const FileUpload = () => {
 
   return (
     <Box>
-      <Box sx={{ mb: 2 }}>
-        <input
-          accept=".csv,.xlsx,.xls"
-          style={{ display: 'none' }}
-          id="file-upload-input"
-          type="file"
-          onChange={handleFileChange}
-          disabled={loading}
-        />
-        <label htmlFor="file-upload-input">
-          <Button
-            variant="outlined"
-            component="span"
-            startIcon={<CloudUploadIcon />}
-            disabled={loading}
-            sx={{ mr: 2 }}
-          >
-            Choose File
-          </Button>
-        </label>
-        {selectedFile && (
-          <Typography variant="body2" sx={{ display: 'inline', ml: 2 }}>
+      <input
+        accept=".csv,.xlsx,.xls"
+        style={{ display: 'none' }}
+        id="file-upload-input"
+        type="file"
+        onChange={handleFileChange}
+        disabled={loading}
+      />
+      <label htmlFor="file-upload-input" className="file-label">
+        <i className="fas fa-cloud-upload-alt"></i> import csv / excel
+      </label>
+      {selectedFile && (
+        <Box sx={{ mt: 2, mb: 1 }}>
+          <Typography variant="body2" sx={{ color: '#a0c2e8', display: 'inline-block', mr: 2 }}>
             Selected: {selectedFile.name}
           </Typography>
-        )}
-        <Button
-          variant="contained"
-          onClick={handleUpload}
-          disabled={!selectedFile || loading}
-          sx={{ ml: 2 }}
-        >
-          Upload
-        </Button>
-      </Box>
+          <button onClick={handleUpload} disabled={loading} className="upload-btn">
+            {loading ? <i className="fas fa-sync-alt fa-spin"></i> : <i className="fas fa-upload"></i>} Upload
+          </button>
+        </Box>
+      )}
 
       {fileError && (
-        <Alert severity="error" sx={{ mb: 2 }}>
+        <Alert 
+          severity="error" 
+          sx={{ 
+            mt: 2, 
+            backgroundColor: 'rgba(238, 102, 102, 0.2)',
+            color: '#ffaaaa',
+            border: '1px solid #ee6666',
+            backdropFilter: 'blur(10px)'
+          }}
+        >
           {fileError}
         </Alert>
       )}
 
-      {loading && <LinearProgress sx={{ mt: 2 }} />}
+      {loading && (
+        <Box sx={{ mt: 2 }}>
+          <LinearProgress 
+            sx={{ 
+              height: 4, 
+              borderRadius: 2,
+              backgroundColor: 'rgba(60, 169, 255, 0.2)',
+              '& .MuiLinearProgress-bar': {
+                backgroundColor: '#3ca9ff'
+              }
+            }} 
+          />
+        </Box>
+      )}
 
-      <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+      <Typography variant="body2" sx={{ mt: 1, color: '#9abde0', fontSize: '0.85rem' }}>
         Supported formats: CSV, XLS, XLSX (Max size: 10MB)
       </Typography>
     </Box>

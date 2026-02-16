@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import { Container, AppBar, Toolbar, Typography, Box } from '@mui/material';
+import { Box } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import Dashboard from './components/Dashboard';
 import { fetchCategories, fetchRegions } from './store/slices/salesSlice';
+import './App.css';
 
 function App() {
   const dispatch = useDispatch();
@@ -14,17 +15,8 @@ function App() {
   }, [dispatch]);
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Sales & Revenue Analytics Dashboard
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <Container maxWidth="xl" sx={{ mt: 4, mb: 4 }}>
-        <Dashboard />
-      </Container>
+    <Box sx={{ position: 'relative', zIndex: 5, minHeight: '100vh', padding: '28px 36px' }}>
+      <Dashboard />
     </Box>
   );
 }

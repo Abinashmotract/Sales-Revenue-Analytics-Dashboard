@@ -1,0 +1,53 @@
+.file-label {
+  background: linear-gradient(145deg, #1d3457, #0f1f38);
+  color: white;
+  padding: 15px 38px;
+  border-radius: 60px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  border: 1px solid #3266a4;
+  box-shadow: 0 15px 25px -8px rgba(0, 0, 0, 0.5), 0 0 0 1px #3b6fc0 inset;
+  transition: 0.25s;
+}
+
+.file-label i {
+  font-size: 1.3rem;
+  color: #92ceff;
+}
+
+.file-label:hover {
+  background: linear-gradient(145deg, #24487a, #172b4b);
+  border-color: #74b9ff;
+  box-shadow: 0 20px 30px -8px rgba(0, 28, 61, 1), 0 0 0 1px #74b9ff inset;
+  transform: scale(1.02);
+}
+
+.upload-btn {
+  background: linear-gradient(145deg, #1d3457, #0f1f38);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid #3266a4;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.25s;
+}
+
+.upload-btn:hover:not(:disabled) {
+  background: linear-gradient(145deg, #24487a, #172b4b);
+  border-color: #74b9ff;
+  transform: translateY(-2px);
+}
+
+.upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
