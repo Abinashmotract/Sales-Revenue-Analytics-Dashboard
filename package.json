@@ -1,0 +1,14 @@
+{
+  "name": "sales-revenue-analytics-dashboard",
+  "version": "1.0.0",
+  "description": "Sales & Revenue Analytics Dashboard with Backend and Frontend",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["sales", "analytics", "dashboard"],
+  "author": "",
+  "license": "ISC"
+}
