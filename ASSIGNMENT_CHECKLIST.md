@@ -155,11 +155,12 @@
 
 ## ✅ Bonus (Optional)
 
-### ⚠️ Deployment
-- **Status**: ⚠️ READY FOR DEPLOYMENT
+### ✅ Deployment
+- **Status**: ✅ DEPLOYED
 - **Details**: 
-  - Application is ready for deployment
-  - Can be deployed on Vercel (frontend), Render/Railway (backend)
+  - **Frontend**: [https://sales-revenue-analytics-dashboard-1.onrender.com](https://sales-revenue-analytics-dashboard-1.onrender.com)
+  - **Backend API**: [https://sales-revenue-analytics-dashboard-kpsi.onrender.com](https://sales-revenue-analytics-dashboard-kpsi.onrender.com)
+  - Deployed on Render
   - Environment variables configured
   - Build scripts available
 

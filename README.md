@@ -88,6 +88,7 @@ cp .env.example .env
 
 Edit the `.env` file with your database credentials:
 
+**For Local Development:**
 ```env
 PORT=5000
 DB_HOST=localhost
@@ -97,6 +98,15 @@ DB_USER=postgres
 DB_PASSWORD=your_password
 NODE_ENV=development
 ```
+
+**For Production (Render):**
+```env
+PORT=5000
+DATABASE_URL=postgresql://user:password@host:port/database
+NODE_ENV=production
+```
+
+**Note:** If `DATABASE_URL` is provided, it will be used automatically. Otherwise, individual DB variables will be used.
 
 ### 4. Initialize the database
 
@@ -329,6 +339,18 @@ Sales & Revenue Analytics Dashboard/
 ### CORS Issues
 - Ensure backend CORS is properly configured
 - Check if backend server is running on the correct port
+
+## Live Demo
+
+The application is deployed and accessible at:
+
+- **Frontend**: [https://sales-revenue-analytics-dashboard-1.onrender.com](https://sales-revenue-analytics-dashboard-1.onrender.com)
+- **Backend API**: [https://sales-revenue-analytics-dashboard-kpsi.onrender.com](https://sales-revenue-analytics-dashboard-kpsi.onrender.com)
+
+### API Base URL (Production)
+```
+https://sales-revenue-analytics-dashboard-kpsi.onrender.com/api
+```
 
 ## License
 

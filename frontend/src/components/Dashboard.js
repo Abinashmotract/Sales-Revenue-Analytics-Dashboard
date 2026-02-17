@@ -239,10 +239,10 @@ const Dashboard = () => {
       <Box sx={{ marginTop: '50px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
         <Box className="deploy-badge"
           component="a"
-          href="https://render.com"
+          href="https://sales-revenue-analytics-dashboard-1.onrender.com"
           target="_blank"
           rel="noopener noreferrer">
-          <i className="fas fa-rocket"></i> live demo · deployed on vercel (bonus)
+          <i className="fas fa-rocket"></i> live demo · deployed on render (bonus)
         </Box>
         <Box
           sx={{
