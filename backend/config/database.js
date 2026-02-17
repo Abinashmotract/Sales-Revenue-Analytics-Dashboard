@@ -4,45 +4,34 @@ require('dotenv').config();
 // Parse DATABASE_URL if provided (for Render/Heroku)
 let poolConfig;
 
+// Check for DATABASE_URL (Render provides this automatically)
 if (process.env.DATABASE_URL) {
-  // Parse PostgreSQL connection string
-  // Format: postgresql://user:password@host:port/database
-  try {
-    // Handle both postgresql:// and postgres:// protocols
-    const connectionString = process.env.DATABASE_URL.replace(/^postgres:/, 'postgresql:');
-    const url = new URL(connectionString);
-    
-    poolConfig = {
-      user: decodeURIComponent(url.username),
-      password: decodeURIComponent(url.password),
-      host: url.hostname,
-      port: parseInt(url.port) || 5432,
-      database: url.pathname.slice(1), // Remove leading '/'
-      ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
-    };
-    console.log('Using DATABASE_URL connection string');
-    console.log('Database:', poolConfig.database);
-  } catch (error) {
-    console.error('Error parsing DATABASE_URL:', error);
-    // Fallback to individual variables
-    poolConfig = {
-      host: process.env.DB_HOST || 'localhost',
-      port: process.env.DB_PORT || 5432,
-      database: process.env.DB_NAME || 'sales_analytics',
-      user: process.env.DB_USER || 'postgres',
-      password: process.env.DB_PASSWORD || 'postgres',
-    };
-  }
+  // Use connection string directly - pg library handles parsing
+  poolConfig = {
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false // Required for Render PostgreSQL
+    }
+  };
+  console.log('Using DATABASE_URL connection string');
+  console.log('Database URL detected:', process.env.DATABASE_URL.substring(0, 30) + '...');
 } else {
   // Use individual environment variables (for local development)
+  const isProduction = process.env.NODE_ENV === 'production';
+  
   poolConfig = {
     host: process.env.DB_HOST || 'localhost',
-    port: process.env.DB_PORT || 5432,
+    port: parseInt(process.env.DB_PORT) || 5432,
     database: process.env.DB_NAME || 'sales_analytics',
     user: process.env.DB_USER || 'postgres',
     password: process.env.DB_PASSWORD || 'postgres',
+    // Enable SSL for production even with individual vars (Render requirement)
+    ssl: isProduction ? { rejectUnauthorized: false } : false,
   };
   console.log('Using individual DB environment variables');
+  console.log('Host:', poolConfig.host);
+  console.log('Database:', poolConfig.database);
+  console.log('SSL:', poolConfig.ssl ? 'enabled' : 'disabled');
 }
 
 const pool = new Pool(poolConfig);
