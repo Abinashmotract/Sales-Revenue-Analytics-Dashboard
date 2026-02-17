@@ -107,3 +107,25 @@ code {
 .floating {
   animation: float 5s infinite ease-in-out;
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+
+  body::before,
+  body::after {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+@media (max-width: 480px) {
+  body::before,
+  body::after {
+    width: 80vw;
+    height: 80vw;
+    filter: blur(60px);
+  }
+}

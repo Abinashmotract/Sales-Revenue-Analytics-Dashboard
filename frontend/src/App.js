@@ -15,7 +15,12 @@ function App() {
   }, [dispatch]);
 
   return (
-    <Box sx={{ position: 'relative', zIndex: 5, minHeight: '100vh', padding: '28px 36px' }}>
+    <Box sx={{ 
+      position: 'relative', 
+      zIndex: 5, 
+      minHeight: '100vh', 
+      padding: { xs: '16px', sm: '20px', md: '28px 36px' }
+    }}>
       <Dashboard />
     </Box>
   );

@@ -119,7 +119,7 @@ const Dashboard = () => {
             <span className="badge-live">
               <span className="pulse-dot"></span> live · streaming
             </span>
-            <span className="badge-live" style={{borderColor:'#8866ff'}}>
+            <span className="badge-live" style={{ borderColor: '#8866ff' }}>
               <i className="far fa-clock"></i> {new Date().toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}
             </span>
           </Box>
@@ -134,7 +134,7 @@ const Dashboard = () => {
         <Filters filters={filters} onFilterChange={handleFilterChange} />
         {totalSalesRevenue && (
           <Box sx={{ marginLeft: 'auto' }} className="chip-cyber">
-            <i className="fas fa-check-circle" style={{color:'#3eff9e'}}></i> {totalSalesRevenue.totalTransactions?.toLocaleString() || 0} rows
+            <i className="fas fa-check-circle" style={{ color: '#3eff9e' }}></i> {totalSalesRevenue.totalTransactions?.toLocaleString() || 0} rows
           </Box>
         )}
       </Box>
@@ -161,19 +161,19 @@ const Dashboard = () => {
           <Box className="chart-panel glass-panel">
             <Box className="chart-header">
               <Typography variant="h3" className="chart-title">
-                <i className="fas fa-wave-square"></i> revenue trend (daily)
+                <i className="fas fa-wave-square"></i> Revenue Trend (Daily)
               </Typography>
               <Box className="legend-dots">
                 <span className="dot-item">
-                  <span style={{background:'#3b9eff', width:'10px', height:'10px', borderRadius:'4px', display:'inline-block'}}></span> 2026
+                  <span style={{ background: '#3b9eff', width: '10px', height: '10px', borderRadius: '4px', display: 'inline-block' }}></span> 2026
                 </span>
               </Box>
             </Box>
             <RevenueTrendChart data={salesTrend} loading={loading} />
             <Box sx={{ display: 'flex', gap: '12px', marginTop: '18px', paddingLeft: '10px' }}>
-              <span className="filter-tag" style={{padding:'6px 20px'}}>daily</span>
-              <span className="filter-tag" style={{padding:'6px 20px'}}>weekly</span>
-              <span className="filter-tag" style={{padding:'6px 20px'}}>monthly</span>
+              <span className="filter-tag" style={{ padding: '6px 20px' }}>daily</span>
+              <span className="filter-tag" style={{ padding: '6px 20px' }}>weekly</span>
+              <span className="filter-tag" style={{ padding: '6px 20px' }}>monthly</span>
             </Box>
           </Box>
         </Grid>
@@ -181,7 +181,7 @@ const Dashboard = () => {
           <Box className="chart-panel glass-panel">
             <Box className="chart-header">
               <Typography variant="h3" className="chart-title">
-                <i className="fas fa-chart-bar"></i> product-wise sales
+                <i className="fas fa-chart-bar"></i> Product Wise Sales
               </Typography>
             </Box>
             <ProductWiseSalesChart data={productWiseSales} loading={loading} />
@@ -194,7 +194,7 @@ const Dashboard = () => {
         <Grid item xs={12} md={7}>
           <Box className="insight-card glass-panel">
             <Typography variant="h3" className="title-sm">
-              <i className="fas fa-chart-pie" style={{color:'#fe8b7b'}}></i> revenue by region
+              <i className="fas fa-chart-pie" style={{ color: '#fe8b7b' }}></i> Revenue By Region
             </Typography>
             <RevenueByRegionChart data={revenueByRegion} loading={loading} />
           </Box>
@@ -202,20 +202,20 @@ const Dashboard = () => {
         <Grid item xs={12} md={5}>
           <Box className="insight-card glass-panel" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: '100%' }}>
             <Typography variant="h3" className="title-sm">
-              <i className="fas fa-microchip"></i> processing & filters
+              <i className="fas fa-microchip"></i> Processing & Filters
             </Typography>
             <Box sx={{ background: '#0a1b31', borderRadius: '50px', padding: '22px', border: '1px solid #3268b0', marginTop: '20px' }}>
               <Box sx={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginBottom: '20px' }}>
-                <span className="filter-tag" style={{background:'#0a2342'}}>
+                <span className="filter-tag" style={{ background: '#0a2342' }}>
                   <i className="far fa-calendar-check"></i> {displayDateRange()}
                 </span>
                 {filters.category && (
-                  <span className="filter-tag" style={{background:'#0a2342'}}>
+                  <span className="filter-tag" style={{ background: '#0a2342' }}>
                     <i className="fas fa-tag"></i> {filters.category}
                   </span>
                 )}
                 {filters.region && (
-                  <span className="filter-tag" style={{background:'#0a2342'}}>
+                  <span className="filter-tag" style={{ background: '#0a2342' }}>
                     <i className="fas fa-globe"></i> {filters.region}
                   </span>
                 )}
@@ -226,7 +226,7 @@ const Dashboard = () => {
                 </Box>
               ) : (
                 <Typography sx={{ marginTop: '20px', color: '#9abde0', fontSize: '0.95rem' }}>
-                  <i className="fas fa-check-circle" style={{color:'#3eff9e'}}></i> 
+                  <i className="fas fa-check-circle" style={{ color: '#3eff9e' }}></i>
                   {' '}CSV processed · {totalSalesRevenue?.totalTransactions?.toLocaleString() || 0} records · 0 errors
                 </Typography>
               )}
@@ -237,12 +237,29 @@ const Dashboard = () => {
 
       {/* Footer */}
       <Box sx={{ marginTop: '50px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-        <Box className="deploy-badge">
+        <Box className="deploy-badge"
+          component="a"
+          href="https://render.com"
+          target="_blank"
+          rel="noopener noreferrer">
           <i className="fas fa-rocket"></i> live demo · deployed on vercel (bonus)
         </Box>
-        <Box sx={{ color: '#a0b5d9' }}>
-          <i className="fab fa-github"></i> sales-revenue-analytics · <i className="far fa-calendar"></i> deadline feb 20 2026
+        <Box
+          sx={{
+            color: '#a0b5d9',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px' 
+          }}
+          component="a"
+          href="https://github.com/Abinashmotract/Sales-Revenue-Analytics-Dashboard.git"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github"></i>
+          <span>Sales & Revenue Analytics</span>
         </Box>
+
       </Box>
 
       <Snackbar
@@ -254,7 +271,7 @@ const Dashboard = () => {
         <Alert
           onClose={handleSnackbarClose}
           severity={importStatus === 'error' || error ? 'error' : 'success'}
-          sx={{ 
+          sx={{
             width: '100%',
             backgroundColor: importStatus === 'error' || error ? 'rgba(238, 102, 102, 0.2)' : 'rgba(0, 230, 150, 0.2)',
             color: '#fff',

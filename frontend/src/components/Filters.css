@@ -62,3 +62,41 @@
   background: #0e1f32;
   color: #d2e5ff;
 }
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .filters-container {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .filter-input-group {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .filter-label {
+    font-size: 0.8rem;
+  }
+
+  .filter-input,
+  .filter-select {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-input,
+  .filter-select {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    border-radius: 32px;
+  }
+
+  .filter-label {
+    font-size: 0.75rem;
+  }
+}

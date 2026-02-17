@@ -87,12 +87,12 @@
 - **Location**: `frontend/src/components/RevenueTrendChart.js`
 - **Details**: Displays revenue trends with time period on X-axis
 
-#### ✅ 5.2. Bar Chart: Product-wise Sales
+#### ✅ 5.2. Bar Chart: Product Wise Sales
 - **Status**: ✅ IMPLEMENTED
 - **Location**: `frontend/src/components/ProductWiseSalesChart.js`
 - **Details**: Horizontal bar chart showing product sales
 
-#### ✅ 5.3. Pie Chart: Revenue by Region
+#### ✅ 5.3. Pie Chart: Revenue By Region
 - **Status**: ✅ IMPLEMENTED
 - **Location**: `frontend/src/components/RevenueByRegionChart.js`
 - **Details**: Doughnut chart showing revenue distribution by region

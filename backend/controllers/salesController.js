@@ -285,7 +285,7 @@ const getSalesTrend = async (req, res, next) => {
   }
 };
 
-// Get product-wise sales
+// Get Product Wise Sales
 const getProductWiseSales = async (req, res, next) => {
   try {
     const { startDate, endDate } = req.query;
@@ -333,7 +333,7 @@ const getProductWiseSales = async (req, res, next) => {
   }
 };
 
-// Get revenue by region
+// Get Revenue By Region
 const getRevenueByRegion = async (req, res, next) => {
   try {
     const { startDate, endDate } = req.query;

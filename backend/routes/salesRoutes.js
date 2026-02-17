@@ -24,10 +24,10 @@ router.get('/filtered', getFilteredSales);
 // Get sales trend
 router.get('/trend', getSalesTrend);
 
-// Get product-wise sales
+// Get Product Wise Sales
 router.get('/products', getProductWiseSales);
 
-// Get revenue by region
+// Get Revenue By Region
 router.get('/regions', getRevenueByRegion);
 
 // Get unique categories

@@ -1,6 +1,6 @@
 # Sales & Revenue Analytics Dashboard
 
-A comprehensive sales and revenue analytics dashboard built with Node.js, Express, PostgreSQL, React, and Material-UI. This application allows users to import sales data via CSV/Excel files and visualize sales trends, product-wise sales, and revenue by region.
+A comprehensive sales and revenue analytics dashboard built with Node.js, Express, PostgreSQL, React, and Material-UI. This application allows users to import sales data via CSV/Excel files and visualize sales trends, Product Wise Sales, and Revenue By Region.
 
 ## Features
 
@@ -12,8 +12,8 @@ A comprehensive sales and revenue analytics dashboard built with Node.js, Expres
   - Total sales and revenue for a given period
   - Filtered sales by product, category, and region
   - Sales trend data (daily, weekly, monthly)
-  - Product-wise sales statistics
-  - Revenue by region
+  - Product Wise Sales statistics
+  - Revenue By Region
 - Comprehensive validation and error handling
 
 ### Frontend
@@ -21,8 +21,8 @@ A comprehensive sales and revenue analytics dashboard built with Node.js, Expres
 - CSV/Excel file upload and processing
 - Interactive charts and visualizations:
   - **Line Chart**: Revenue trends over time
-  - **Bar Chart**: Product-wise sales
-  - **Pie Chart**: Revenue by region
+  - **Bar Chart**: Product Wise Sales
+  - **Pie Chart**: Revenue By Region
 - Advanced filtering:
   - Date range filter
   - Category filter
@@ -178,13 +178,13 @@ npm run build:frontend
     - `endDate` (optional): End date
     - `period` (optional): `daily`, `weekly`, or `monthly` (default: `daily`)
 
-#### Get Product-wise Sales
+#### Get Product Wise Sales
 - **GET** `/sales/products`
   - Query Parameters:
     - `startDate` (optional): Start date
     - `endDate` (optional): End date
 
-#### Get Revenue by Region
+#### Get Revenue By Region
 - **GET** `/sales/regions`
   - Query Parameters:
     - `startDate` (optional): Start date

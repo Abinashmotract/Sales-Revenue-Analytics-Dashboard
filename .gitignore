@@ -27,3 +27,9 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Documentation and sample files (not for GitHub)
+ASSIGNMENT_CHECKLIST.md
+SETUP.md
+sample_data.csv
+assignment.txt

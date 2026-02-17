@@ -2,7 +2,7 @@ Assignment - Full Stack Developer - Dyne Infotech Private Limited
 
 Machine Test: Sales & Revenue Analytics Dashboard
 Objective:
-Develop a sales and revenue analytics dashboard that provides insights into sales trends, revenue performance, and product-wise sales distribution.
+Develop a sales and revenue analytics dashboard that provides insights into sales trends, revenue performance, and Product Wise Sales distribution.
 
 Requirements
 
@@ -23,8 +23,8 @@ Implement a feature to upload and process CSV/Excel files for sales data.
 Display data using charts and graphs (e.g., ApexCharts or Recharts).
 Implement the following visualizations:
     Line chart: Revenue trends over time.
-    Bar chart: Product-wise sales.
-    Pie chart: Revenue by region.
+    Bar chart: Product Wise Sales.
+    Pie chart: Revenue By Region.
     Filters: Date range, category, and region.
 Use Redux Toolkit for state management or API calls.
 Implement basic error handling, validation, and loading indicators.

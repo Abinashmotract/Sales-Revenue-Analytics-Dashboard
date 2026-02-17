@@ -1,16 +1,77 @@
 date,product_name,category,region,quantity,unit_price
-2024-01-01,Product A,Electronics,North,10,99.99
-2024-01-02,Product B,Clothing,South,5,49.99
-2024-01-03,Product C,Electronics,East,8,79.99
-2024-01-04,Product A,Electronics,West,12,99.99
-2024-01-05,Product D,Clothing,North,15,29.99
-2024-01-06,Product B,Clothing,South,7,49.99
-2024-01-07,Product E,Electronics,East,20,149.99
-2024-01-08,Product C,Electronics,West,6,79.99
-2024-01-09,Product A,Electronics,North,9,99.99
-2024-01-10,Product F,Clothing,South,11,39.99
-2024-01-11,Product D,Clothing,East,18,29.99
-2024-01-12,Product E,Electronics,West,14,149.99
-2024-01-13,Product B,Clothing,North,6,49.99
-2024-01-14,Product C,Electronics,South,10,79.99
-2024-01-15,Product A,Electronics,East,13,99.99
+2024-01-15,Wireless Bluetooth Headphones,Electronics,North,25,79.99
+2024-01-16,Smartphone Case,Accessories,South,45,19.99
+2024-01-17,LED Monitor 27 inch,Electronics,East,12,299.99
+2024-01-18,Mechanical Keyboard,Accessories,West,30,89.99
+2024-01-19,Wireless Mouse,Accessories,North,60,24.99
+2024-01-20,USB-C Cable,Accessories,South,80,12.99
+2024-01-21,Laptop Stand,Accessories,East,18,49.99
+2024-01-22,Webcam HD 1080p,Electronics,West,22,69.99
+2024-01-23,External Hard Drive 1TB,Electronics,North,15,89.99
+2024-01-24,Tablet Stand,Accessories,South,35,29.99
+2024-01-25,Wireless Charger,Accessories,East,50,34.99
+2024-01-26,HDMI Cable,Accessories,West,70,14.99
+2024-01-27,Bluetooth Speaker,Electronics,North,28,59.99
+2024-01-28,USB Hub 4 Port,Accessories,South,40,19.99
+2024-01-29,Screen Protector Pack,Accessories,East,100,9.99
+2024-01-30,Phone Mount,Accessories,West,55,15.99
+2024-02-01,Wireless Earbuds,Electronics,North,38,79.99
+2024-02-02,Keyboard Wrist Rest,Accessories,South,25,18.99
+2024-02-03,Monitor Arm Stand,Accessories,East,10,79.99
+2024-02-04,USB Flash Drive 64GB,Accessories,West,65,12.99
+2024-02-05,Desk Organizer,Accessories,North,42,24.99
+2024-02-06,Wireless Headset,Electronics,South,20,99.99
+2024-02-07,Cable Management Kit,Accessories,East,48,16.99
+2024-02-08,Portable SSD 512GB,Electronics,West,12,129.99
+2024-02-09,Phone Case Clear,Accessories,North,75,14.99
+2024-02-10,Bluetooth Adapter,Accessories,South,30,22.99
+2024-02-11,Webcam 4K,Electronics,East,8,149.99
+2024-02-12,Laptop Cooling Pad,Accessories,West,25,39.99
+2024-02-13,USB-C Hub,Accessories,North,35,49.99
+2024-02-14,Wireless Keyboard,Electronics,South,28,69.99
+2024-02-15,Monitor Privacy Filter,Accessories,East,15,44.99
+2024-02-16,External SSD 1TB,Electronics,West,10,159.99
+2024-02-17,Desk Mat,Accessories,North,50,29.99
+2024-02-18,USB Microphone,Electronics,South,18,79.99
+2024-02-19,Cable Ties Pack,Accessories,East,90,7.99
+2024-02-20,Wireless Presenter,Accessories,West,12,34.99
+2024-02-21,HD Webcam,Electronics,North,22,59.99
+2024-02-22,Phone Grip Stand,Accessories,South,60,11.99
+2024-02-23,USB-C to HDMI Adapter,Accessories,East,40,19.99
+2024-02-24,Bluetooth Car Adapter,Electronics,West,15,29.99
+2024-02-25,Desk Lamp LED,Accessories,North,30,39.99
+2024-02-26,Wireless Gaming Mouse,Electronics,South,25,89.99
+2024-02-27,USB Extension Cable,Accessories,East,55,8.99
+2024-02-28,Monitor Calibration Tool,Accessories,West,5,199.99
+2024-02-29,Phone Ring Holder,Accessories,North,70,6.99
+2024-03-01,Wireless Charging Pad,Accessories,South,45,24.99
+2024-03-02,USB-C Power Bank,Electronics,East,20,49.99
+2024-03-03,Keyboard Cleaner Kit,Accessories,West,35,12.99
+2024-03-04,HDMI Splitter,Accessories,North,18,34.99
+2024-03-05,Wireless Mouse Pad,Accessories,South,25,19.99
+2024-03-06,USB Audio Interface,Electronics,East,8,129.99
+2024-03-07,Cable Sleeve,Accessories,West,40,9.99
+2024-03-08,Portable Monitor,Electronics,North,6,249.99
+2024-03-09,Phone Stand Adjustable,Accessories,South,50,18.99
+2024-03-10,USB-C Multiport Adapter,Accessories,East,30,54.99
+2024-03-11,Wireless Controller,Electronics,West,22,59.99
+2024-03-12,Desk Fan USB,Accessories,North,35,22.99
+2024-03-13,External DVD Drive,Electronics,South,12,49.99
+2024-03-14,Cable Organizer Box,Accessories,East,28,16.99
+2024-03-15,USB-C to Ethernet Adapter,Accessories,West,25,24.99
+2024-03-16,Wireless Trackpad,Electronics,North,15,99.99
+2024-03-17,Monitor VESA Mount,Accessories,South,20,39.99
+2024-03-18,USB Hub 7 Port,Accessories,East,18,29.99
+2024-03-19,Bluetooth FM Transmitter,Electronics,West,25,19.99
+2024-03-20,Desk Cable Tray,Accessories,North,30,24.99
+2024-03-21,Wireless Number Pad,Accessories,South,15,34.99
+2024-03-22,USB-C Dock Station,Electronics,East,10,89.99
+2024-03-23,Phone Wallet Case,Accessories,West,40,19.99
+2024-03-24,HDMI to VGA Adapter,Accessories,North,22,14.99
+2024-03-25,Wireless Charger Stand,Accessories,South,35,39.99
+2024-03-26,USB-C Cable 6ft,Accessories,East,60,15.99
+2024-03-27,Portable Speaker,Electronics,West,28,49.99
+2024-03-28,Keyboard Cover,Accessories,North,45,12.99
+2024-03-29,USB-C to USB Adapter,Accessories,South,55,8.99
+2024-03-30,Wireless Headphones Pro,Electronics,East,18,149.99
+2024-03-31,Monitor Light Bar,Accessories,West,25,59.99

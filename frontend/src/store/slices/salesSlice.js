@@ -150,7 +150,7 @@ const salesSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-      // Fetch product-wise sales
+      // Fetch Product Wise Sales
       .addCase(fetchProductWiseSales.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -163,7 +163,7 @@ const salesSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
       })
-      // Fetch revenue by region
+      // Fetch Revenue By Region
       .addCase(fetchRevenueByRegion.pending, (state) => {
         state.loading = true;
         state.error = null;

@@ -5,6 +5,11 @@
   z-index: 5;
 }
 
+/* Override MUI Typography h3 variant to 2rem */
+.dashboard .MuiTypography-h3 {
+  font-size: 2rem !important;
+}
+
 /* Header */
 .header-row {
   display: flex;
@@ -53,14 +58,6 @@
   backdrop-filter: blur(8px);
   letter-spacing: 0.3px;
 }
-
-/* Upload Glow */
-/* .upload-glow {
-  background: linear-gradient(145deg, #13233f, #0b172b);
-  border-radius: 80px;
-  padding: 6px;
-  border: 1px solid rgba(46, 74, 128, 0.3);
-} */
 
 /* Filter Bar */
 .filter-bar {
@@ -157,7 +154,7 @@
 .chart-title {
   font-weight: 600;
   color: #d2ecff;
-  font-size: 1.3rem;
+  font-size: 2rem !important;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -196,7 +193,7 @@
 }
 
 .title-sm {
-  font-size: 1.2rem;
+  font-size: 2rem !important;
   font-weight: 600;
   color: #c9e2ff;
   margin-bottom: 20px;
@@ -258,9 +255,12 @@
   align-items: center;
   gap: 10px;
   box-shadow: 0 0 20px rgba(0, 68, 255, 0.25);
+  text-decoration: none;
 }
 
-/* Responsive */
+/* Responsive Styles */
+
+/* Tablet and below (max-width: 1100px) */
 @media (max-width: 1100px) {
   .metrics-grid {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -270,5 +270,235 @@
   }
   .bottom-duo {
     grid-template-columns: 1fr !important;
+  }
+}
+
+/* Tablet (768px - 1100px) */
+@media (max-width: 1100px) and (min-width: 768px) {
+  .logo-title {
+    font-size: 2rem !important;
+  }
+  .chart-title {
+    font-size: 1.5rem !important;
+  }
+  .title-sm {
+    font-size: 1.5rem !important;
+  }
+  .filter-bar {
+    padding: 16px 24px;
+    border-radius: 60px;
+  }
+  .chart-panel {
+    padding: 18px;
+    border-radius: 32px;
+  }
+  .insight-card {
+    padding: 20px;
+    border-radius: 32px;
+  }
+}
+
+/* Mobile and Small Tablets (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Header */
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    gap: 16px;
+  }
+
+  .logo-title {
+    font-size: 1.5rem !important;
+    flex-wrap: wrap;
+  }
+
+  .logo-title i {
+    font-size: 1.4rem !important;
+  }
+
+  .badge-live {
+    font-size: 0.75rem;
+    padding: 6px 16px;
+  }
+
+  /* Filter Bar */
+  .filter-bar {
+    margin: 24px 0;
+    padding: 16px 20px;
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .chip-cyber {
+    margin-left: 0 !important;
+    margin-top: 8px;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 6px 18px;
+  }
+
+  /* Metrics Grid */
+  .metrics-grid {
+    margin-bottom: 24px;
+  }
+
+  /* Chart Title */
+  .chart-title {
+    font-size: 1.3rem !important;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .title-sm {
+    font-size: 1.3rem !important;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Chart Panel */
+  .chart-panel {
+    padding: 16px;
+    border-radius: 28px;
+    margin-bottom: 16px;
+  }
+
+  .chart-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .legend-dots {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* Insight Card */
+  .insight-card {
+    padding: 16px;
+    border-radius: 28px;
+    margin-bottom: 16px;
+  }
+
+  .region-legend {
+    gap: 16px;
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  .deploy-badge {
+    font-size: 0.8rem;
+    padding: 6px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Bottom Duo */
+  .bottom-duo {
+    margin-top: 20px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Header */
+  .logo-title {
+    font-size: 1.2rem !important;
+  }
+
+  .logo-title i {
+    font-size: 1.1rem !important;
+  }
+
+  .badge-live {
+    font-size: 0.7rem;
+    padding: 5px 12px;
+    gap: 6px;
+  }
+
+  /* Filter Bar */
+  .filter-bar {
+    padding: 12px 16px;
+    border-radius: 32px;
+  }
+
+  /* Chart Title */
+  .chart-title {
+    font-size: 1.1rem !important;
+    font-weight: 600;
+  }
+
+  .title-sm {
+    font-size: 1.1rem !important;
+    font-weight: 600;
+  }
+
+  /* Chart Panel */
+  .chart-panel {
+    padding: 12px;
+    border-radius: 24px;
+  }
+
+  .insight-card {
+    padding: 12px;
+    border-radius: 24px;
+  }
+
+  /* Metrics */
+  .metric-value {
+    font-size: 2rem !important;
+  }
+
+  .metric-label {
+    font-size: 0.8rem;
+  }
+
+  .trend-up {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+
+  /* Region Legend */
+  .region-legend {
+    gap: 12px;
+    font-size: 0.75rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  .deploy-badge {
+    font-size: 0.75rem;
+    padding: 5px 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Shimmer */
+  .shimmer {
+    padding: 10px 18px;
+    font-size: 0.85rem;
+  }
+
+  /* Chart containers */
+  .chart-container {
+    height: 200px !important;
+  }
+}
+
+/* Chart responsive adjustments */
+@media (max-width: 767px) {
+  .chart-container {
+    height: 220px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    height: 180px !important;
   }
 }
