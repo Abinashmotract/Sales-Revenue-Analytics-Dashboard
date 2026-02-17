@@ -113,7 +113,7 @@ const Dashboard = () => {
       <Box className="header-row">
         <Box className="logo-area">
           <Typography variant="h1" className="logo-title">
-            <i className="fas fa-bolt"></i> neon<span style={{fontWeight:300}}>:sales</span> · revenue
+            <i className="fas fa-bolt"></i>Sales & Revenue Analytics
           </Typography>
           <Box sx={{ display: 'flex', gap: '10px', marginTop: '8px', flexWrap: 'wrap' }}>
             <span className="badge-live">

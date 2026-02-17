@@ -105,9 +105,9 @@ const FileUpload = () => {
               height: 4, 
               borderRadius: 2,
               backgroundColor: 'rgba(60, 169, 255, 0.2)',
-              '& .MuiLinearProgress-bar': {
-                backgroundColor: '#3ca9ff'
-              }
+              // '& .MuiLinearProgress-bar': {
+              //   backgroundColor: '#3ca9ff'
+              // }
             }} 
           />
         </Box>
